@@ -44,7 +44,7 @@ input {border: none; outline: none;}
 .hero-section-area {display: flex; flex-direction: column; justify-content: center; height: 480px;}
 .hero-social-profile {display: none;}
 
-.section-area {margin-top: 30px;}
+.section-area {margin-top: 50px;}
 .section-container {width: 80%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px;}
 
 .courasol-section {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/courasol1.jpg); background-size: cover; height: 400px;}
