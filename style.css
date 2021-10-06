@@ -39,7 +39,7 @@ input {border: none; outline: none;}
 .navigation-icons i {cursor: pointer; transition: color 0.3s;}
 .navigation-icons i:hover {color: var(--primary-color);}
 .search-bar {position: absolute; right: 0; top: 110%; height: 0px; padding-left: 15px; border-radius: 3px; background-color: white; transition: height 0.3s;}
-.show-search {height: 30px;}
+.show-search {height: 40px;}
 
 .hero-section-area {display: flex; flex-direction: column; justify-content: center; height: 480px;}
 .hero-social-profile {display: none;}
