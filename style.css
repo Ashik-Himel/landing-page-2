@@ -41,7 +41,7 @@ input {border: none; outline: none;}
 .search-bar {position: absolute; right: 0; top: 110%; height: 0px; padding-left: 15px; border-radius: 3px; background-color: white; transition: height 0.3s;}
 .show-search {height: 30px;}
 
-.hero-section-area {display: flex; flex-direction: column; justify-content: center; height: 400px;}
+.hero-section-area {display: flex; flex-direction: column; justify-content: center; height: 550px;}
 .hero-social-profile {display: none;}
 
 .section-area {margin-top: 30px;}
