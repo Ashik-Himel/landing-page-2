@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+:root {
+    --primary-color: hsl(31, 100%, 63%);
+    --primary-color-alt: hsl(31, 100%, 50%);
+    --bg-color-gray: rgb(44, 44, 44);
+}
+* {padding: 0; margin: 0; box-sizing: border-box;}
+html {scroll-behavior: smooth;}
+body {font-family: "Open Sans Regular"; background-color: black; color: white;}
+body a {color: white; text-decoration: none;}
+ul {list-style-type: none;}
+img {max-width: 100%;}
+input {border: none; outline: none;}
+.hero-heading {font-size: 2rem; margin-bottom: 25px;}
+.hero-heading span {display: block; font-weight: 400;}
+.section-title-before {color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px;}
+.section-title-before::before {content: ""; display: inline-block; height: 1px; width: 50px; background-color: var(--primary-color); margin-bottom: 3px; margin-right: 10px;}
+.section-title {font-size: 2rem; margin-bottom: 20px;}
+.section-paragraph {font-size: 0.85rem; text-align: justify; margin-bottom: 25px;}
+.primary-btn {background-color: var(--primary-color); color: white; padding: 12px 25px; border-radius: 10px; display: inline-block; font-size: 0.9rem; transition: background-color 0.3s;}
+.primary-btn:hover {background-color: var(--primary-color-alt);}
+.link-btn {display: inline-block; color: var(--primary-color); font-size: 0.9rem; transition: scale 0.3s;}
+.link-btn:hover {transform: scale(1.2);}
+
+.top-header {background-color: var(--bg-color-gray);}
+.social-profile {display: flex; justify-content: center; align-items: center; gap: 10px; height: 40px;}
+.social-profile a i {transition: color 0.3s ease;}
+.social-profile a i:hover {color: var(--primary-color);}
+
+.header {background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(images/hero-image.jpg); background-repeat: no-repeat; background-size: cover; padding: 15px; position: relative;}
+
+.navigation-area {display: flex; justify-content: space-between; align-items: center; position: relative;}
+.navigation {position: absolute; top: 110%; width: 100%; background-color: var(--primary-color); border-radius: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; height: 0; padding: 0; overflow: hidden; transition: height 0.3s, padding 0.3s;}
+.show-menu {height: 130px; padding: 15px;}
+.navigation-icons {display: flex; gap: 15px; align-items: center;}
+.navigation-icons i {cursor: pointer; transition: color 0.3s;}
+.navigation-icons i:hover {color: var(--primary-color);}
+.search-bar {position: absolute; right: 0; top: 110%; height: 0px; padding-left: 15px; border-radius: 3px; background-color: white; transition: height 0.3s;}
+.show-search {height: 30px;}
+
+.hero-section-area {display: flex; flex-direction: column; justify-content: center; height: 400px;}
+.hero-social-profile {display: none;}
+
+.section-area {margin-top: 30px;}
+.section-container {width: 80%; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px;}
+
+.courasol-section {background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/courasol1.jpg); background-size: cover; height: 400px;}
+.courasol-section .section-container {display: flex; flex-direction: column; gap: 15px; justify-content: flex-end; height: 100%; padding-bottom: 30px;}
+.for-right-line::after {content: ""; display: inline-block; height: 1px; width: 50px; background-color: var(--primary-color); margin-bottom: 3px; margin-left: 10px;}
+.courasol-section .section-container * {margin: 0;}
+
+.top-footer {background-color: var(--bg-color-gray);}
+.top-footer .section-container {padding: 15px 0; gap: 15px;}
+.top-footer .section-container .top-footer-btns a:first-of-type {margin-right: 15px;}
+
+.footer-widgets-area {display: flex; flex-direction: row; justify-content: space-between; flex-wrap: wrap;}
+.footer-widgets {display: flex; flex-direction: column; gap: 10px; }
+.last-widget {width: 100%; gap: 15px;}
+.last-widget .email-box {border-bottom: 1px solid var(--primary-color); display: flex; justify-content: space-between;}
+.last-widget .email-box [type="email"] {background-color: transparent;}
+.last-widget .email-box [type="submit"] {background-color: var(--primary-color); padding: 10px 15px; border-radius: 5px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;}
+
+.bottom-footer {padding: 15px 0; border-top: 0.5px solid rgba(255, 255, 255, 0.3); font-size: 0.9rem; display: flex; flex-direction: row; justify-content: space-between; align-items: center; text-align: center;}
+.bottom-footer a {color: var(--primary-color);}
+.bottom-footer-widget2 {display: none;}
+
+@media screen and (min-width: 768px) {
+    .hero-section-area {align-items: center;}
+    .section-container {align-items: flex-start;}
+    .top-footer .section-container {flex-direction: row; justify-content: space-between;}
+    .footer-widgets {flex: 1;}
+    .last-widget {order: -1;}
+    .bottom-footer-widget2 {display: flex; gap: 15px;}
+    .courasol-section .section-container > * {width: 100%; text-align: center;}
+}
+
+@media screen and (min-width: 992px) {
+    .top-header {display: none;}
+    .hero-section-area {flex-direction: row-reverse; justify-content: space-around; align-items: center;}
+    .hero-section {flex-basis: 40%;}
+    .hero-social-profile {display: flex; gap: 10px; transform: rotate(-90deg);}
+    .hero-social-profile a {color: var(--primary-color);}
+    .navigation-icons > i {display: none;}
+    .search-bar {height: fit-content; position: static; padding: 5px; background-color: transparent;}
+    .search-bar:focus {border-bottom: 1px solid white;}
+    ::placeholder {color: rgba(255, 255, 255, 0.8); font-family: "Open Sans Regular";}
+    .header {padding: 30px 50px;}
+    .navigation {height: fit-content; position: static; width: fit-content; flex-direction: row; background-color: transparent; gap: 30px;}
+    .section-container {flex-direction: row; gap: 50px; align-items: center; margin-top: 70px;}
+    .section-container > * {flex: 1;}
+    .courasol-section {height: 550px;}
+    .courasol-section .section-container {}
+}
