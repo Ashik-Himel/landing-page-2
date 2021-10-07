@@ -14,7 +14,7 @@ body a {color: white; text-decoration: none;}
 ul {list-style-type: none;}
 img {max-width: 100%;}
 input {border: none; outline: none;}
-.site-logo span {color: --primary-color;}
+.site-logo span {color: var(--primary-color);}
 .hero-heading {font-size: 2rem; margin-bottom: 25px;}
 .hero-heading span {display: block; font-weight: 400;}
 .section-title-before {color: var(--primary-color); text-transform: uppercase; font-size: 0.9rem; margin-bottom: 10px;}
